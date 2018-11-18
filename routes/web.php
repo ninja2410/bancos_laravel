@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+/*RUTAS DE CRUD CLIENTE*/
+Route::get('prueba', function(){
+  return view('customer.index');
+});
