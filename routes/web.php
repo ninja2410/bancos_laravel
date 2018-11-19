@@ -21,3 +21,12 @@ Route::post('customers/save', 'CustomerController@save');
 Route::get('customers/edit/{id}', 'CustomerController@edit');
 Route::post('customers/update/{id}', 'CustomerController@update');
 Route::get('customers/delete/{id}', 'CustomerController@delete');
+
+
+/*RUTAS CRUD BANCOS*/
+Route::get('banks', 'BankController@index');
+Route::get('banks/create', 'BankController@create');
+Route::post('banks/save', 'BankController@save');
+Route::get('banks/edit/{id}', 'BankController@edit');
+Route::post('banks/update/{id}', 'BankController@update');
+Route::get('banks/delete/{id}', 'BankController@delete');

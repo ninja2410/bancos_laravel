@@ -40,8 +40,8 @@
             </div>
 
             <ul class="nav">
-                <li class="active">
-                    <a href="dashboard.html">
+                <li>
+                    <a href="{{'banks'}}">
                         <i class="ti-panel"></i>
                         <p>Bancos</p>
                     </a>
@@ -103,19 +103,16 @@
             </div>
         </div>
 
-
         <footer class="footer">
             <div class="container-fluid">
                 <nav class="pull-left">
                     <ul>
-
                         <li>
                           Proyecto final Programación comercial
                         </li>
 												<li>
 													<b> Developer:</b> Pablo F. García
 												</li>
-
                     </ul>
                 </nav>
                 <div class="copyright pull-right">
@@ -123,7 +120,7 @@
                 </div>
             </div>
         </footer>
-
+				 <i class="fa ti-pencil">
     </div>
 </div>
 
