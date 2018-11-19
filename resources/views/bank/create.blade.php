@@ -19,7 +19,7 @@
     <div class="" style="text-align:center;">
       <button type="submit" class="btn btn-success btn-fill btn-wd" name="button">Guardar</button>
       {!! Form::close() !!}
-      <a href="{{url('customers')}}"><button type="button" class="btn btn-danger btn-fill btn-wd" name="button">Cancelar</button></a>
+      <a href="{{url('banks')}}"><button type="button" class="btn btn-danger btn-fill btn-wd" name="button">Cancelar</button></a>
     </div>
 
   </div>
