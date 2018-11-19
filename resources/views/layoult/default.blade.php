@@ -47,7 +47,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="user.html">
+                    <a href="{{'customers'}}">
                         <i class="ti-user"></i>
                         <p>Clientes</p>
                     </a>
@@ -97,7 +97,9 @@
 
         <div class="content">
             <div class="container-fluid">
-              @yield('content')
+							<div class="card">
+								@yield('content')
+							</div>
             </div>
         </div>
 

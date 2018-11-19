@@ -15,6 +15,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 /*RUTAS DE CRUD CLIENTE*/
-Route::get('prueba', function(){
-  return view('customer.index');
-});
+Route::get('customers', 'CustomerController@index');
+Route::get('customers/create', 'CustomerController@create');
+Route::post('customers/save', 'CustomerController@save');
+Route::get('customers/edit/{id}', 'CustomerController@edit');
+Route::post('customers/update/{id}', 'CustomerController@update');
+Route::get('customers/delete/{id}', 'CustomerController@delete');
