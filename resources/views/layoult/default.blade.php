@@ -53,7 +53,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="table.html">
+                    <a href="{{'accounts'}}">
                         <i class="ti-view-list-alt"></i>
                         <p>Cuentas</p>
                     </a>

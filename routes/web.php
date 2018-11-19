@@ -30,3 +30,12 @@ Route::post('banks/save', 'BankController@save');
 Route::get('banks/edit/{id}', 'BankController@edit');
 Route::post('banks/update/{id}', 'BankController@update');
 Route::get('banks/delete/{id}', 'BankController@delete');
+
+
+/*RUTAS CRUD CUENTAS*/
+Route::get('accounts', 'AccountController@index');
+Route::get('accounts/create', 'AccountController@create');
+Route::post('accounts/save', 'AccountController@save');
+Route::get('accounts/edit/{id}', 'AccountController@edit');
+Route::post('accounts/update/{id}', 'AccountController@update');
+Route::get('accounts/delete/{id}', 'AccountController@delete');
