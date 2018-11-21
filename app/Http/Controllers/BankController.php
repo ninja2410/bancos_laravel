@@ -8,6 +8,9 @@ use \Auth, \Redirect, \Validator, \Input, \Session;
 
 class BankController extends Controller
 {
+  public function __construct(){
+    $this->middleware('auth');
+  }
   public function index(){
     $Banks=Bank::all();
     return view('bank.index', ['Banks'=>$Banks]);

@@ -8,6 +8,9 @@ use \Auth, \Redirect, \Validator, \Input, \Session;
 
 class CustomerController extends Controller
 {
+  public function __construct(){
+    $this->middleware('auth');
+  }
   public function index(){
     $customers=Customer::all();
     return view('customer.index', ['customers'=>$customers]);

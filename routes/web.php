@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 /*RUTAS DE CRUD CLIENTE*/
 Route::get('customers', 'CustomerController@index');
@@ -36,6 +36,17 @@ Route::get('banks/delete/{id}', 'BankController@delete');
 Route::get('accounts', 'AccountController@index');
 Route::get('accounts/create', 'AccountController@create');
 Route::post('accounts/save', 'AccountController@save');
-Route::get('accounts/edit/{id}', 'AccountController@edit');
+Route::get('accounts/details/{id}', 'AccountController@details');
 Route::post('accounts/update/{id}', 'AccountController@update');
 Route::get('accounts/delete/{id}', 'AccountController@delete');
+Route::get('deposits/{id}', 'AccountController@deposit');
+Route::get('retirement/{id}', 'AccountController@retirement');
+
+/*TRANSACTION*/
+Route::post('transaction', 'AccountController@store_transaction');
+Route::get('transactions/list/{id}', 'TransactionController@index');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+Route::get('start', 'HomeController@dashboard');

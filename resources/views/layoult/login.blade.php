@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/bank.jpg">
-	<link rel="icon" type="image/png" sizes="96x96" href="assets/img/bank.jpg">
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon.png">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
 	<title>@yield('title') Bancos Ninja´s</title>
@@ -22,7 +22,6 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
     <link href="{{asset('assets/css/themify-icons.css')}}" rel="stylesheet">
-		<script src="{{ asset('js/app.js') }}" defer></script>
     @yield('header_styles')
 </head>
 <body>
@@ -42,21 +41,9 @@
 
             <ul class="nav">
                 <li>
-                    <a href="{{url('banks')}}">
+                    <a href="{{url('home')}}">
                         <i class="ti-panel"></i>
-                        <p>Bancos</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="{{url('customers')}}">
-                        <i class="ti-user"></i>
-                        <p>Clientes</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="{{url('accounts')}}">
-                        <i class="ti-view-list-alt"></i>
-                        <p>Cuentas</p>
+                        <p>Iniciar Session</p>
                     </a>
                 </li>
             </ul>
@@ -85,15 +72,7 @@
 									<b class="caret"></b>
                               </a>
                               <ul class="dropdown-menu">
-																<a class="dropdown-item" href="{{ route('logout') }}"
-																	 onclick="event.preventDefault();
-																								 document.getElementById('logout-form').submit();">
-																		{{ __('Logout') }}
-																</a>
-
-																<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-																		@csrf
-																</form>
+                                <li><a href="#">Cerrar Session</a></li>
                               </ul>
                         </li>
 
